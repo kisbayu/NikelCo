@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id('id');
+            $table->string('name');
             $table->string('type');
-            $table->string('owenership');
+            $table->string('ownership');
             $table->bigInteger('fuel_capacity');
             $table->date('service_date');
             $table->date('last_used');

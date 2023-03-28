@@ -9,7 +9,6 @@ use Illuminate\Support\Str;
 
 class employee extends Model
 {
-    use HasFactory, HasUuids;
-    protected $primaryKey ='uuid';
+    use HasFactory;
     protected $guarded = [];
 }
